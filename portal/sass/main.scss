@@ -1,0 +1,91 @@
+html, head {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Chivo', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/bg.jpg");
+        background-size: cover;
+        opacity: .6;
+        z-index: -1;
+        display: block;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.logo {
+    width: 30rem;
+    height: auto;
+
+    @media only screen and (max-width: 750px) {
+        width: 20rem;
+    }
+
+    &__box {
+        text-align: center;
+        padding-top: 3rem;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+
+    @media only screen and (max-width: 750px) {
+        flex-direction: column;
+    }
+    
+    &__box {
+        text-decoration: none;
+        text-align: center;
+
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-.5rem);
+        }
+
+        &:hover .content__icon {
+            transform: scale(1.05) translateY(-.5rem)
+        }
+
+        @media only screen and (max-width: 750px) {
+            padding: 1rem 0;
+        }
+    }
+
+    &__icon {
+        transition: all .3s ease-in-out;
+        width: 10rem;
+        height: auto;
+    }
+}
+
+.heading-secondary {
+    color: white;
+    margin: 0;
+    backface-visibility: hidden;
+    text-decoration: none;
+}
+
+#body-particles canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
