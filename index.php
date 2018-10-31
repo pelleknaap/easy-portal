@@ -18,13 +18,30 @@ $ini = parse_ini_file('config.ini');
     </title>
     <link href="https://fonts.googleapis.com/css?family=Chivo:400,700" rel="stylesheet">
     <link rel="stylesheet" href="./dist/index.css">
+
+    <style>
+        .logo {
+            width: <?php echo $ini['logo_width'] ?>; 
+            animation: <?php echo $ini['logo_animation']; 
+            echo ' '; 
+            echo $ini['logo_animation_time'] ?> 
+            forwards infinite;
+        }
+
+        @media only screen and (max-width: 750px) { 
+            .logo {
+                width: <?php echo $ini['logo_mobile_width'] ?>;
+            }
+        };
+
+    </style>
 </head>
 
 <body>
     <div id="body-particles">
     </div>
     <div class="logo__box">
-        <img src="<?php echo $ini['logo_url'] ?>" alt="logo" class="logo">
+        <img src="<?php echo $ini['logo_url'] ?>" alt="logo" class="logo" >
     </div>
     <div class="content">
         <?php 
