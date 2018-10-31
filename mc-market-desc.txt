@@ -1,0 +1,26 @@
+Moderators, you can find the source code/proof of ownership on https://github.com/pelleknaap/easy-portal . 
+I accidentally included a logo template by woodpunch graphics in the first version, if it's possible you can delete the first version? I've only used it as a demo, I've added a little disclaimer at the bottom of the page to clarify it. I'm not sure if it's allowed so just delete this resource if it isn't.
+
+Welcome to the resource page of "Easy portal".
+One of the goals of this portal is to provide a super smooth installation service. You can just drop all the files in your webhost folder and you're ready to go!
+
+Video:
+
+
+Features:
+Performance: I've optimized everything as much as I can. This means that it'll have super fast load times. It has a 96 performance rating as you can see in the image. 
+Measured with the Chrome audit tools.
+Easy installation: you can just drag and drop all the files into your webhost folder.
+Configurable: almost everything can be changed! You can find the default config file here: https://hastebin.com/eguzofomes.ini
+Animations: there are smooth, built-in animations. Click on this link to see the animations : https://gyazo.com/09de2210845ce6af1a1f04781e9b4efa
+Particles: to make the portal more engaging, I've added particles to the background. You can change the size of the particles in the config.
+Unlimited icons: you can add as many icons as you want! Just make sure you update the [PHP]amount_of_icons[/PHP] field in the config.
+
+To do:
+A box with the ip, click to copy.
+A playercount
+If you have any suggestions on what I could add in the next update, please give them in the discussions :)
+
+NOTE: The logo used in the demo images isn't owned by me. It's a template made by https://woodpunchsgraphics.com/ it's only used to demostrate the portal.
+
+You need to add a logo file yourself, it isn't included in the download!
